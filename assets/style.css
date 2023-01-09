@@ -1,0 +1,137 @@
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.pass-gen {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(198, 233, 245);
+}
+
+.pass-gen1 {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: peru;
+}
+
+.pass-gen2 {
+  background-color: aqua;
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: saddlebrown 0px 2px 8px 8px;
+  color: black;
+  font-size: 20px;
+  margin: 0% auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.header-c::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  height: 3px;
+}
+
+.footer-C::before {
+  content: " ";
+  display: block;
+  clear: both;
+  width: 100%;
+  background-color: azure;
+  height: 2px;
+}
+
+.footer-C {
+  text-align: center;
+}
+
+.body-cart {
+  min-height: 100px;
+}
+
+.footer-C::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.button {
+  border: none;
+  background-color: brown;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 15px 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+  background-color: blueviolet;
+}
+
+.button:hover {
+  background: red;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 2px 2px gray;
+}
+
+#pass-gen {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px 15px 85px 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 8px;
+  resize: none;
+  overflow: hidden;
+}
+
+@media (max-width: 690px) {
+  .button {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 0.8rem;
+  }
+}
